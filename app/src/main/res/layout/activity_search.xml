@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context="com.example.book.SearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#FFF2F2F2"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ToolbarPopupTheme"
+        android:id="@+id/Bookxinxitoolbar"
+        android:layout_height="55dp">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/fanhui"
+                android:background="#00000000"
+                android:id="@+id/Bookxinxifanhui" />
+
+            <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/search"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp">
+            <Button
+                android:layout_marginLeft="20dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/search1" />
+            <!-- 输入的搜索信息 -->
+            <EditText
+                android:id="@+id/searchedit"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:maxLength="10"
+                android:hint="输入内容进行搜索"
+                android:singleLine="true"
+                android:textColor="#0e0e0e"
+                android:textColorHint="#b0c6ce"
+                android:textSize="17sp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:focusable="true"
+                android:textCursorDrawable="@drawable/editguanbiao"
+                android:paddingTop="5dp" />
+                <Button
+                    android:id="@+id/searchxiaochu"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/xiaochu"
+                    android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/searchsousuo"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="搜索"
+            android:background="#00000000"
+            android:layout_alignTop="@+id/linearLayout"
+            android:textSize="18sp"
+            android:layout_width="40dp" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:text="指定搜索内容"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bookxinxitoolbar"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/searchtextView2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="54dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/searchtextView2"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="书名"
+            android:textColor="#FF05B105"
+            android:background="#00000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchbookname"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:text="ISBN"
+            android:textColor="#FF05B105"
+            android:background="#00000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchISBN"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="作者"
+            android:textColor="#FF05B105"
+            android:background="#00000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchzuozhe"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

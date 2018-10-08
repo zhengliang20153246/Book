@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/zuixinfabutoolbar"
+        app:popupTheme="@style/ToolbarPopupTheme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/fanhui"
+            android:background="#00000000"
+
+            android:id="@+id/zuixinfabufanhui" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="最新发布"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:text="默认"
+            android:textColor="#f82c22"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/moren"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonstyle" />
+
+        <Button
+            android:text="价格"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/jiage"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:textSize="13dp" />
+
+        <Button
+            android:text="上架时间"
+            android:layout_width="wrap_content"
+            android:id="@+id/shangjia"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttonstyle"
+            android:layout_height="35dp"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zuixinfabulistview" />
+
+</LinearLayout>

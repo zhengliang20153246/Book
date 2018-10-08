@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_mygouwuche"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.book.MygouwucheActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF2F2F2"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:popupTheme="@style/ToolbarPopupTheme"
+        android:id="@+id/Mygouwuchetoolbar">
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/fanhui"
+        android:background="#00000000"
+        android:id="@+id/Mygouwuchefanhui" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="购物车"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/mygouwuchelayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Mygouwuchetoolbar"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_below="@+id/Mygouwuchetoolbar"
+            android:layout_alignParentStart="true"
+            android:id="@+id/mygouwuchelistview" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="#FFFFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="70dp">
+
+            <CheckBox
+                android:layout_marginLeft="15dp"
+                android:text="      全选"
+                android:layout_height="wrap_content"
+                android:id="@+id/mygouwuchecheckBox"
+                android:button="@drawable/checkboxseletor"
+                android:layout_width="120dp" />
+            <TextView
+                android:text="合计："
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+            <TextView
+                android:text="¥ "
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFEC6D23"
+                />
+
+            <TextView
+                android:text="0.00"
+                android:textSize="17sp"
+                android:textColor="#FFEC6D23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/Mygouwuchezongjia"
+                android:layout_weight="1"/>
+
+            <Button
+                android:text="购买"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/button"
+                android:background="#FFC90C06" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

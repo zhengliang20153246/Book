@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Mydianpuzhuye"
+        android:title="主页"></item>
+    <item
+        android:id="@+id/Mydianpugeren"
+        android:title="个人中心"></item>
+    <item
+        android:id="@+id/Mydianpugouwuche"
+        android:title="购物车"></item>
+    <item
+        android:id="@+id/Mydianpudingdan"
+        android:title="我的订单"></item>
+
+</menu>

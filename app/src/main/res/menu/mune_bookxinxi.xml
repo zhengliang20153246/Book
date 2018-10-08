@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Bookxinxizhuye"
+        android:title="主页"></item>
+    <item
+        android:id="@+id/Bookxinxigeren"
+        android:title="个人中心"></item>
+    <item
+        android:id="@+id/Bookxinximydianpu"
+        android:title="我的店铺"></item>
+    <item
+        android:id="@+id/Bookxinxigouwuche"
+        android:title="购物车"></item>
+    <item
+        android:id="@+id/Bookxinxidingdan"
+        android:title="我的订单"></item>
+</menu>

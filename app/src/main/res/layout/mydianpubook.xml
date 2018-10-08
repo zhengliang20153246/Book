@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.book.MainActivity"
+    android:background="#FFFFFFFF">
+
+    <ImageView
+        app:srcCompat="@color/base_color_text_gray"
+        android:id="@+id/mydianpubook"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/mydianpubook"
+        android:layout_width="500px"
+        android:layout_height="100dp">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Mydianpubookname"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Mydianpubookprice"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/ll"
+        android:layout_width="50px"
+        android:layout_height="300px">
+
+        <Button
+            android:text="编辑"
+            android:layout_width="20dp"
+            android:id="@+id/Mydianpubianji"
+            android:layout_weight="1"
+            android:elevation="0dp"
+            android:background="#FFFFFFFF"
+            android:layout_height="130dp"
+            style="?android:attr/borderlessButtonStyle" />
+        <Button
+            android:layout_weight="1"
+            android:text="查看"
+            android:layout_width="20dp"
+            android:id="@+id/Mydianpuchakan"
+            android:background="#FFFFFFFF"
+            android:allowUndo="false"
+            android:layout_height="130dp"
+            style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+
+</RelativeLayout>

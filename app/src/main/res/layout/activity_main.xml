@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.book.MainActivity"
+    android:background="#FFFFFFFF"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <SearchView
+        android:background="#FFF2F2F2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/mainroll_view_pager"
+                android:layout_width="match_parent"
+                app:rollviewpager_play_delay="3000"
+                android:layout_height="200dp" />
+            <TableLayout
+                android:background="#FFFFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TableRow
+                >
+                <View
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="5dip"
+                    android:layout_height="30dip"
+                    android:background="#FFC41D1D"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:text="个人区"/>
+            </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:background="#FFFFFFFF"
+                android:stretchColumns="*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <ImageButton
+                        android:background="#00FFFFFF"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        app:srcCompat="@drawable/shopping"
+                        android:id="@+id/zhuwogouwuche"
+                        />
+                    <ImageButton
+                        android:background="#00FFFFFF"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        app:srcCompat="@drawable/geren"
+                        android:id="@+id/zhuwogeren" />
+                    <ImageButton
+                        android:background="#00FFFFFF"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="25dp"
+                        app:srcCompat="@drawable/mydianpu"
+                        android:id="@+id/zhuwodianpu" />
+                    <ImageButton
+                        android:background="#00FFFFFF"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        app:srcCompat="@drawable/mydingdan"
+                        android:id="@+id/zhuwodingdan"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/zhuwogouwuchetext"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="购物车" />
+                    <TextView
+                        android:id="@+id/zhuwogerentext"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="20dp"
+                        android:text="个人中心" />
+                    <TextView
+                        android:id="@+id/zhuwodianputext"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:text="我的店铺" />
+                    <TextView
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/zhuwodingdantext"
+                        android:layout_marginLeft="5dp"
+                        android:text="我的订单" />
+                </TableRow>
+            </TableLayout>
+            <ImageView
+                android:background="#FFF2F2F2"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+            <TableLayout
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TableRow>
+                <View
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="5dip"
+                    android:layout_height="30dip"
+                    android:background="#FFC41D1D"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:text="功能区"/>
+            </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:background="#FFFFFFFF"
+                android:stretchColumns="*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:gravity="center_horizontal">
+                    <ImageButton
+                        android:background="#00FFFFFF"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        app:srcCompat="@drawable/fenlei"
+                        android:id="@+id/zhuwofenlei"
+                        />
+                    <ImageButton
+                        android:background="#00FFFFFF"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        app:srcCompat="@drawable/hotsale"
+                        android:id="@+id/zhuworexiao"
+                         />
+                    <ImageButton
+                        android:background="#00FFFFFF"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="25dp"
+                        app:srcCompat="@drawable/zuixin"
+                        android:id="@+id/zhuwozuixin"
+                        />
+                    <ImageButton
+                        android:background="#00FFFFFF"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        app:srcCompat="@drawable/gonglue"
+                        android:id="@+id/zhuwogonglue"
+                         />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/zhuwofenleitext"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="分类浏览" />
+                    <TextView
+                        android:id="@+id/zhuworexiaotext"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="20dp"
+                        android:text="热门销售" />
+                    <TextView
+                        android:id="@+id/zhuwozuixintext"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:text="最新发布" />
+                    <TextView
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/zhuwogongluetext"
+                        android:layout_marginLeft="5dp"
+                        android:text="攻略秘籍" />
+                </TableRow>
+            </TableLayout>
+
+
+            <ListView
+                android:background="#FFFFFFFF"
+                android:id="@+id/list1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@android:color/transparent" />
+
+            <ListView
+                android:background="#FFFFFFFF"
+                android:id="@+id/list2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list1"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

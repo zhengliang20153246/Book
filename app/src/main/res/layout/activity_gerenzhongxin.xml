@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+
+    <View
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#9fa0a0"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view2" />
+
+    <TextView
+        android:text="    信誉等级"
+        android:textSize="13dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignEnd="@+id/textView4"
+        android:id="@+id/textView5"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:text="个人中心"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="账户管理 >    "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/zhanghuguanli"
+        android:textSize="18dp"
+        android:background="#00000000"
+        android:backgroundTint="@color/base_bg"
+        android:elevation="23dp" />
+
+    <View  android:layout_height="1px"
+    android:layout_width="match_parent"
+    android:background="#9fa0a0"
+    android:layout_marginTop="16dp"
+    android:layout_below="@+id/textView5"
+    android:layout_alignParentStart="true" />
+
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#9fa0a0"
+        android:id="@+id/view6"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar" />
+
+    <Button
+        android:text="签到"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/qiandao"
+        android:background="#00000000"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/view2"
+        android:layout_toEndOf="@+id/view8"
+        android:layout_above="@+id/imageView2" />
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="62dip"
+        android:background="#9fa0a0"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/view8"
+        android:layout_alignBottom="@+id/view6"
+        android:layout_toStartOf="@+id/zhanghuguanli" />
+
+    <TextView
+        android:text="00000"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/textView10"
+        android:layout_alignStart="@+id/progressBar8"
+        android:layout_toStartOf="@+id/view8"
+        android:layout_above="@+id/imageView2" />
+
+
+    <TextView
+        android:text="   用户名"
+        android:textSize="18dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/imageView"
+        android:paddingTop="10dp" />
+
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#9fa0a0"
+        android:id="@+id/view7"
+        android:layout_alignTop="@+id/list_view"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/zhanghuguanli">
+<ImageButton
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    app:srcCompat="@drawable/fanhui"
+    android:background="#00000000"
+
+    android:id="@+id/fanhui" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="个人中心"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/touxiang"
+        android:layout_marginStart="24dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        app:civ_border_color="@android:color/holo_red_dark"
+        app:civ_border_width="2dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:background="#FFFFFFFF"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:srcCompat="@color/color_bottom_text_normal"
+        android:id="@+id/imageView2"
+        android:layout_alignTop="@+id/view6"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="积分："
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="20dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/view6" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar"
+        android:layout_height="10dip"
+        android:id="@+id/progressBar8"
+        android:max="1000"
+        android:secondaryProgress="300"
+
+        android:layout_above="@+id/textView10"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_width="180dip" />
+</RelativeLayout>

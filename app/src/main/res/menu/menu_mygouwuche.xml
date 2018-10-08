@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Mygouwuchezhuye"
+        android:title="主页"></item>
+    <item
+        android:id="@+id/Mygouwuchegeren"
+        android:title="个人中心"></item>
+    <item
+        android:id="@+id/Mygouwuchemydianpu"
+        android:title="我的店铺"></item>
+    <item
+        android:id="@+id/Mygouwuchedingdan"
+        android:title="我的订单"></item>
+
+</menu>
